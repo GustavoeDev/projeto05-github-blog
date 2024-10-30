@@ -1,5 +1,6 @@
+import { Issues } from "./components/Issues";
 import { Summary } from "./components/Summary";
-import { HomeContainer, SearchBar } from "./styles";
+import { HomeContainer, IssuesAside, SearchBar } from "./styles";
 
 export function Home() {
   return (
@@ -13,6 +14,12 @@ export function Home() {
         </div>
         <input type="text" placeholder="Buscar conteúdo" />
       </SearchBar>
+
+      <IssuesAside>
+        <Issues />
+        <Issues />
+        <Issues />
+      </IssuesAside>
     </HomeContainer>
   );
 }

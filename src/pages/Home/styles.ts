@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HomeContainer = styled.main`
   max-width: 54rem;
   margin: 0 auto;
+  padding-bottom: 14rem;
 
   display: flex;
   flex-direction: column;
@@ -31,4 +32,10 @@ export const SearchBar = styled.div`
       color: ${(props) => props.theme["gray-500"]};
     }
   }
+`;
+
+export const IssuesAside = styled.div`
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
 `;
