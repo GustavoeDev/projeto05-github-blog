@@ -1,17 +1,25 @@
 import styled from "styled-components";
 
 export const SummaryContainer = styled.aside`
-  width: 100%;
   padding: 2rem;
   background-color: ${(props) => props.theme["blue-700"]};
   box-shadow: 0 0 15px ${(props) => props.theme["blue-900"]};
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 2rem;
 
   margin-top: -6.25rem;
+
+  & > img {
+    max-width: 9.25rem;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  & > section {
+    flex: 1;
+  }
 `;
 
 export const SummaryHeader = styled.div`
