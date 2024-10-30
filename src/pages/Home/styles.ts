@@ -7,3 +7,28 @@ export const HomeContainer = styled.main`
   display: flex;
   flex-direction: column;
 `;
+
+export const SearchBar = styled.div`
+  margin: 4.5rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & > input {
+    background-color: ${(props) => props.theme["blue-900"]};
+    color: ${(props) => props.theme["gray-300"]};
+    border: 1px solid ${(props) => props.theme["blue-500"]};
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+
+    &::placeholder {
+      color: ${(props) => props.theme["gray-500"]};
+    }
+  }
+`;
