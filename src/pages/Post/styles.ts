@@ -32,7 +32,7 @@ export const PostTitle = styled.div`
   justify-content: space-between;
   margin-bottom: 1.25rem;
 
-  & > div > a {
+  & > div a {
     display: flex;
     align-items: center;
     gap: 0.625rem;
@@ -60,4 +60,9 @@ export const PostAnchors = styled.div`
       color: ${(props) => props.theme["gray-400"]};
     }
   }
+`;
+
+export const PostContent = styled.div`
+  padding: 2.5rem 2rem;
+  text-align: justify;
 `;
