@@ -10,7 +10,7 @@ export function Summary() {
       <section>
         <SummaryHeader>
           <h1>Camerom Williamson</h1>
-          <a href="http://github.com/GustavoeDev">
+          <a href="http://github.com/GustavoeDev" target="_blank">
             GITHUB
             <ArrowUpRight size={12} />
           </a>
