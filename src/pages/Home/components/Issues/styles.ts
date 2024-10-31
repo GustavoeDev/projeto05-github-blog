@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
-export const IssuesContainer = styled.div`
+export const IssuesContainer = styled.a`
+  text-decoration: none;
+
   max-width: 26rem;
+  height: 16.25rem;
   width: 100%;
+  overflow: hidden;
   background-color: ${(props) => props.theme["blue-600"]};
   padding: 2rem;
   border-radius: 10px;
@@ -18,10 +22,16 @@ export const IssuesContainer = styled.div`
       width: 80%;
       font-size: 1.25rem;
       font-weight: bold;
+      color: ${(props) => props.theme["gray-100"]};
     }
 
     & > span {
       font-size: 0.875rem;
+      color: ${(props) => props.theme["gray-400"]};
     }
+  }
+
+  & > p {
+    color: ${(props) => props.theme["gray-300"]};
   }
 `;
