@@ -5,7 +5,7 @@ import { HomeContainer, IssuesAside, SearchBar } from "./styles";
 import { searchIssues } from "../../lib/axios";
 
 interface Issue {
-  id: number;
+  number: number;
   title: string;
   body: string;
   created_at: string;
@@ -61,7 +61,8 @@ export function Home() {
         ) : (
           issue.map((issueData) => (
             <Issues
-              key={issueData.id}
+              key={issueData.number}
+              number={issueData.number}
               title={issueData.title}
               body={issueData.body}
               created_at={issueData.created_at}
